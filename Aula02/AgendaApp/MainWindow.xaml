@@ -1,0 +1,25 @@
+﻿<Window x:Class="AgendaApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AgendaApp"
+        mc:Ignorable="d"
+        Title="Agenda" Height="250" Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="27*"/>
+            <ColumnDefinition Width="373*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="10,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="pt-br" Text="Nome"/></TextBlock>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="120,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="1.308,0.375"><Run Language="pt-br" Text="E-mail"/></TextBlock>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="230,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.941,0.318"><Run Text="Te"/><Run Language="pt-br" Text="lefone"/></TextBlock>
+        <TextBox x:Name="txtNome" Grid.Column="1" HorizontalAlignment="Left" Margin="10,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="85"/>
+        <TextBox x:Name="txtFone" Grid.Column="1" HorizontalAlignment="Left" Margin="230,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="85"/>
+        <TextBox x:Name="txtEmail" Grid.Column="1" HorizontalAlignment="Left" Margin="120,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="85"/>
+        <Button Content="Inserir" Grid.Column="1" HorizontalAlignment="Left" Margin="8,84,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.454,0.238" Click="Button_Click"/>
+        <ListBox x:Name="list" Grid.Column="1" Margin="0,122,58,10"/>
+        <Button Content="Excluir" Grid.Column="1" HorizontalAlignment="Left" Margin="69,84,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>
