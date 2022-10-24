@@ -1,0 +1,5 @@
+C:\Users\20211011110020\source\repos\Aula04\Abastecimento\obj\Debug\net5.0-windows\Abastecimento.csproj.AssemblyReference.cache
+C:\Users\20211011110020\source\repos\Aula04\Abastecimento\obj\Debug\net5.0-windows\MainWindow.g.cs
+C:\Users\20211011110020\source\repos\Aula04\Abastecimento\obj\Debug\net5.0-windows\App.g.cs
+C:\Users\20211011110020\source\repos\Aula04\Abastecimento\obj\Debug\net5.0-windows\Abastecimento_MarkupCompile.cache
+C:\Users\20211011110020\source\repos\Aula04\Abastecimento\obj\Debug\net5.0-windows\Abastecimento_MarkupCompile.lref
