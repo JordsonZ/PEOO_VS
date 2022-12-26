@@ -1,0 +1,24 @@
+﻿<Window x:Class="EscolaApp.TurmaWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EscolaApp"
+        mc:Ignorable="d"
+        Title="TurmaWindow" Height="210" Width="400">
+    <Grid>
+        <TextBox Name="txtId" HorizontalAlignment="Left" Margin="19,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="65"/>
+        <TextBlock HorizontalAlignment="Left" Margin="19,17,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="pt-br" Text="Id"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="89,17,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-0.044,0.483"><Run Language="pt-br" Text="Curso"/></TextBlock>
+        <TextBox Name="txtCurso" HorizontalAlignment="Left" Margin="89,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="89"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,17,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="pt-br" Text="Turma"/></TextBlock>
+        <TextBox Name="txtTurma" HorizontalAlignment="Left" Margin="183,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="101"/>
+        <TextBlock HorizontalAlignment="Left" Margin="289,17,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="pt-br" Text="AnoLetivo"/></TextBlock>
+        <TextBox Name="txtAno" HorizontalAlignment="Left" Margin="289,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="98"/>
+        <Button Content="Inserir" HorizontalAlignment="Left" Margin="19,57,0,0" VerticalAlignment="Top" Click="InserirClick"/>
+        <Button Click="ListarClick" Content="Listar" HorizontalAlignment="Left" Margin="66,57,0,0" VerticalAlignment="Top"/>
+        <Button Click="AtualizarClick" Content="Atualizar" HorizontalAlignment="Left" Margin="108,57,0,0" VerticalAlignment="Top"/>
+        <Button Click="ExcluirClick" Content="Excluir" HorizontalAlignment="Left" Margin="168,57,0,0" VerticalAlignment="Top"/>
+        <ListBox Name="listTurmas" Margin="19,85,13,10" />
+    </Grid>
+</Window>
