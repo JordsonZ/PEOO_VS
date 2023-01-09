@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTurma xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Turma>
+    <Id>1</Id>
+    <Curso>Manutenção</Curso>
+    <Descricao>1º Ano</Descricao>
+    <AnoLetivo>2021</AnoLetivo>
+  </Turma>
+  <Turma>
+    <Id>2</Id>
+    <Curso>InfoWeb</Curso>
+    <Descricao>2º Ano</Descricao>
+    <AnoLetivo>2023</AnoLetivo>
+  </Turma>
+</ArrayOfTurma>

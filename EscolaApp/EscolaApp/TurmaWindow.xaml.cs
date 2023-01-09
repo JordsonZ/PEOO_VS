@@ -26,12 +26,15 @@ namespace EscolaApp
 
         private void InserirClick(object sender, RoutedEventArgs e)
         {
+            // Novo objeto com os dados da turma que será inserida
             Turma t = new Turma();
             t.Id = int.Parse(txtId.Text);
             t.Curso = txtCurso.Text;
             t.Descricao = txtTurma.Text;
             t.AnoLetivo = int.Parse(txtAno.Text);
+            // Inserir a turma na lista de turmas
             NTurma.Inserir(t);
+            // Lista a turma inserida
             ListarClick(sender, e);
         }
 
@@ -43,21 +46,39 @@ namespace EscolaApp
 
         private void AtualizarClick(object sender, RoutedEventArgs e)
         {
+            // Novo objeto com os dados da turma que será inserida
             Turma t = new Turma();
             t.Id = int.Parse(txtId.Text);
             t.Curso = txtCurso.Text;
             t.Descricao = txtTurma.Text;
             t.AnoLetivo = int.Parse(txtAno.Text);
+            // Inserir a turma na lista de turmas
             NTurma.Atualizar(t);
+            // Lista as turmas cadastradas
             ListarClick(sender, e);
         }
 
         private void ExcluirClick(object sender, RoutedEventArgs e)
         {
+            // Novo objeto com os dados da turma que será inserida
             Turma t = new Turma();
             t.Id = int.Parse(txtId.Text);
+            // Inserir a turma na lista de turmas
             NTurma.Excluir(t);
+            // Lista as turmas cadastradas
             ListarClick(sender, e);
+        }
+
+        private void listTurmas_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (listTurmas.SelectedItem != null)
+            {
+                Turma obj = (Turma)listTurmas.SelectedItem;
+                txtId.Text = obj.Id.ToString();
+                txtCurso.Text = obj.Curso;
+                txtTurma.Text = obj.Descricao;
+                txtAno.Text = obj.AnoLetivo.ToString();
+            }
         }
     }
 }

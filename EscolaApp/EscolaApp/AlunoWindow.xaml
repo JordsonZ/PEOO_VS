@@ -5,8 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EscolaApp"
         mc:Ignorable="d"
-        Title="AlunoWindow" Height="200" Width="300">
+        Title="AlunoWindow" Height="200" Width="400">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="45*"/>
+            <RowDefinition Height="47*"/>
+        </Grid.RowDefinitions>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" Text="Id" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="55,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="pt-br" Text="Nome"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="180,10,0,0" Text="Matrícula" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="305,10,0,0" Text="E-Mail" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox Name="txtId" HorizontalAlignment="Left" Margin="10,30,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="40"/>
+        <TextBox Name="txtNome" HorizontalAlignment="Left" Margin="55,30,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtMatricula" HorizontalAlignment="Left" Margin="180,30,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtEmail" HorizontalAlignment="Left" Margin="305,30,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="70" />
+        <Button Click="InserirClick" Content="Inserir" HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top"/>
+        <Button Click="ListarClick" Content="Listar" HorizontalAlignment="Left" Margin="52,53,0,0" VerticalAlignment="Top"/>
+        <Button Click="AtualizarClick" Content="Atualizar" HorizontalAlignment="Left" Margin="89,53,0,0" VerticalAlignment="Top"/>
+        <Button Click="ExcluirClick" Content="Excluir" HorizontalAlignment="Left" Margin="144,53,0,0" VerticalAlignment="Top"/>
+        <ListBox Name="listAlunos" Margin="10,80,15,15" SelectionChanged="listAlunos_SelectionChanged" Grid.RowSpan="2" />
     </Grid>
 </Window>
