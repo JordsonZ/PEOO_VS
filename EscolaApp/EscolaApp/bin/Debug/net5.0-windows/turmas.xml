@@ -12,4 +12,10 @@
     <Descricao>2º Ano</Descricao>
     <AnoLetivo>2023</AnoLetivo>
   </Turma>
+  <Turma>
+    <Id>3</Id>
+    <Curso>InfoWeb</Curso>
+    <Descricao>3º Ano</Descricao>
+    <AnoLetivo>2024</AnoLetivo>
+  </Turma>
 </ArrayOfTurma>

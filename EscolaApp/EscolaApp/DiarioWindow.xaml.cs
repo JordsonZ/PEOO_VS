@@ -22,6 +22,19 @@ namespace EscolaApp
         public DiarioWindow()
         {
             InitializeComponent();
+            listTurmas.ItemsSource = NTurma.Listar();
+        }
+
+        private void ListarClick(object sender, RoutedEventArgs e)
+        {
+            if (listTurmas.SelectedItem != null)
+            {
+                Turma t = (Turma)listTurmas.SelectedItem;
+                listAlunos.ItemsSource = null;
+                listAlunos.ItemsSource = NAluno.Listar(t);
+            }
+            else
+                MessageBox.Show("É preciso selecionar uma turma");
         }
     }
 }

@@ -12,6 +12,7 @@ namespace EscolaApp
         public string Curso { get; set; }
         public string Descricao { get; set; }
         public int AnoLetivo { get; set; }
+        public int IdProfessor { get; set; }
         public override string ToString()
         {
             return $"{Id} - {Curso} - {Descricao} - {AnoLetivo}";

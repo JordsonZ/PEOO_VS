@@ -26,36 +26,49 @@ namespace EscolaApp
 
         private void InserirClick(object sender, RoutedEventArgs e)
         {
-            Aluno a = new Aluno();
-            a.Id = int.Parse(txtId.Text);
-            a.Nome = txtNome.Text;
-            a.Matricula = int.Parse(txtMatricula.Text);
-            a.Email = txtEmail.Text;
-            NAluno.Inserir(a);
+            // Novo objeto com os dados da turma que será inserida
+            Aluno t = new Aluno();
+            t.Id = int.Parse(txtId.Text);
+            t.Nome = txtNome.Text;
+            t.Matricula = txtMatricula.Text;
+            t.Email = txtEmail.Text;
+            // Inserir a turma na lista de turmas
+            NAluno.Inserir(t);
+            // Lista a turma inserida
             ListarClick(sender, e);
         }
+
         private void ListarClick(object sender, RoutedEventArgs e)
         {
             listAlunos.ItemsSource = null;
             listAlunos.ItemsSource = NAluno.Listar();
         }
+
         private void AtualizarClick(object sender, RoutedEventArgs e)
         {
-            Aluno a = new Aluno();
-            a.Id = int.Parse(txtId.Text);
-            a.Nome = txtNome.Text;
-            a.Matricula = int.Parse(txtMatricula.Text);
-            a.Email = txtEmail.Text;
-            NAluno.Atualizar(a);
+            // Novo objeto com os dados da turma que será inserida
+            Aluno t = new Aluno();
+            t.Id = int.Parse(txtId.Text);
+            t.Nome = txtNome.Text;
+            t.Matricula = txtMatricula.Text;
+            t.Email = txtEmail.Text;
+            // Inserir a turma na lista de turmas
+            NAluno.Atualizar(t);
+            // Lista as turmas cadastradas
             ListarClick(sender, e);
         }
+
         private void ExcluirClick(object sender, RoutedEventArgs e)
         {
-            Aluno a = new Aluno();
-            a.Id = int.Parse(txtId.Text);
-            NAluno.Excluir(a);
+            // Novo objeto com os dados da turma que será inserida
+            Aluno t = new Aluno();
+            t.Id = int.Parse(txtId.Text);
+            // Inserir a turma na lista de turmas
+            NAluno.Excluir(t);
+            // Lista as turmas cadastradas
             ListarClick(sender, e);
         }
+
         private void listAlunos_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (listAlunos.SelectedItem != null)
@@ -63,10 +76,9 @@ namespace EscolaApp
                 Aluno obj = (Aluno)listAlunos.SelectedItem;
                 txtId.Text = obj.Id.ToString();
                 txtNome.Text = obj.Nome;
-                txtMatricula.Text = obj.Matricula.ToString();
+                txtMatricula.Text = obj.Matricula;
                 txtEmail.Text = obj.Email;
             }
         }
     }
-    }
-
+}

@@ -2,8 +2,37 @@
 <ArrayOfAluno xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Aluno>
     <Id>1</Id>
-    <Nome>cs</Nome>
-    <Matricula>21</Matricula>
-    <Email>sac</Email>
+    <Nome>Marcílio</Nome>
+    <Matricula>20201014040001</Matricula>
+    <Email>marcilio@email.com</Email>
+    <IdTurma>1</IdTurma>
+  </Aluno>
+  <Aluno>
+    <Id>3</Id>
+    <Nome>Gabriel Santa Rosa</Nome>
+    <Matricula>1234</Matricula>
+    <Email>gsr@email.com</Email>
+    <IdTurma>2</IdTurma>
+  </Aluno>
+  <Aluno>
+    <Id>4</Id>
+    <Nome>Heitor</Nome>
+    <Matricula>4321</Matricula>
+    <Email>heitor@email.com</Email>
+    <IdTurma>2</IdTurma>
+  </Aluno>
+  <Aluno>
+    <Id>5</Id>
+    <Nome>Jordson</Nome>
+    <Matricula>8888</Matricula>
+    <Email>jordson@email.com</Email>
+    <IdTurma>3</IdTurma>
+  </Aluno>
+  <Aluno>
+    <Id>6</Id>
+    <Nome>Marcio</Nome>
+    <Matricula>20201014040002</Matricula>
+    <Email>marcio@email.com</Email>
+    <IdTurma>3</IdTurma>
   </Aluno>
 </ArrayOfAluno>

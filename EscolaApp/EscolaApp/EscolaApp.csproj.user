@@ -16,6 +16,9 @@
     <Compile Update="MatriculaWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="ProfessorWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="TurmaWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -31,6 +34,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MatriculaWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ProfessorWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="TurmaWindow.xaml">

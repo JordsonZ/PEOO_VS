@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EscolaApp"
         mc:Ignorable="d"
-        Title="TurmaWindow" Height="200" Width="400">
+        Title="Cadastro de Turmas" Height="270" Width="400">
     <Grid>
         <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" Text="Id" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="55,10,0,0" Text="Curso" TextWrapping="Wrap" VerticalAlignment="Top"/>

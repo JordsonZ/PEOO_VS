@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EscolaApp"
         mc:Ignorable="d"
-        Title="MatriculaWindow" Height="200" Width="300">
+        Title="Matricular Aluno" Height="270" Width="400">
     <Grid>
-        
+        <ListBox Name="listAlunos" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,10,0,0" Width="370" Height="90"/>
+        <ListBox Name="listTurmas" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,110,0,0" Width="370" Height="90"/>
+        <Button Click="ListarClick" Content="Listar" HorizontalAlignment="Left" Margin="10,205,0,0" VerticalAlignment="Top"/>
+        <Button Click="MatricularClick" Content="Matricular" HorizontalAlignment="Left" Margin="47,205,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
