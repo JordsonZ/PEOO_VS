@@ -1,0 +1,22 @@
+﻿<Window x:Class="Locacao.VeiculoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Locacao"
+        mc:Ignorable="d"
+        Title="VeiculoWindow" Height="200" Width="400">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" Text="Id" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="55,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="pt-br" Text="Modelo"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="180,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="pt-br" Text="Placa"/></TextBlock>
+        <TextBox Name="txtId" HorizontalAlignment="Left" Margin="10,30,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="40"/>
+        <TextBox Name="txtModelo" HorizontalAlignment="Left" Margin="55,30,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtPlaca" HorizontalAlignment="Left" Margin="180,30,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Click="ListarClick" Content="Listar" HorizontalAlignment="Left" Margin="56,53,0,0" VerticalAlignment="Top"/>
+        <Button Click="InserirClick" Content="Inserir" HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.766,2.123"/>
+        <Button Click="AtualizarClick" Content="Atualizar" HorizontalAlignment="Left" Margin="95,53,0,0" VerticalAlignment="Top"/>
+        <Button Click="ExcluirClick" Content="Excluir" HorizontalAlignment="Left" Margin="156,53,0,0" VerticalAlignment="Top"/>
+        <ListBox Height="96" VerticalAlignment="Top" Margin="10,78,10,0"/>
+    </Grid>
+</Window>
